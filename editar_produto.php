@@ -57,7 +57,7 @@ require_once("ControllerProdutos.php");
 							</div>
 							<div class="form-group">
 								<label for="img">Imagem:</label>
-								<input type="file" class="form-control" name="img">
+								<input type="file" class="form-control" name="imagem">
                             </div>
 							<button type="submit" id="btnInserir" class="btn btn-primary">Editar</button>
 						</form>

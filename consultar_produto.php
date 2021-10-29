@@ -65,7 +65,7 @@ require_once("ControllerProdutos.php");
 									<td scope="col"><?php echo $resultado[$i]['nome']; ?></td>
 									<td scope="col"><?php echo $resultado[$i]['descricao']; ?></td>
 									<td scope="col"><?php echo $resultado[$i]['preco']; ?></td>
-									<td scope="col"><?php print '<img src="data:image/jpeg;base64,'.base64_encode($resultado[$i]['img'] ).'"style="height: 100px">';?></td>
+									<td scope="col"><?php echo '<img src="uploads/'.$resultado[$i]['img'].'"style="height: 100px">';?></td>
 									<td scope="col">
 										<button type="button" class="btn btn-outline-primary" onclick="location.href='editar_produto.php?id=<?php echo $resultado[$i]['id']; ?>'" style="width: 72px;">Editar</button>
 										<button type="button" class="btn btn-outline-primary" onclick="javascript:confirmDelete('excluir_produto.php?id=<?php echo $resultado[$i]['id']; ?>')" style="width: 72px;">Excluir</button>

@@ -19,7 +19,7 @@ class Banco_produtos{
 
     public function setProdutos($nome,$descricao,$preco,$imagem){
         $stmt = $this->mysqli->prepare("INSERT INTO produtos (`nome`, `descricao`, `preco`, `img`) VALUES (?,?,?,?);");
-        $stmt->bind_param("sssb",$nome,$descricao,$preco,$imagem);
+        $stmt->bind_param("ssss",$nome,$descricao,$preco,$imagem);
         if( $stmt->execute() == TRUE){
             return true;
         }else{

@@ -23,8 +23,8 @@ class Produtos extends Banco_produtos {
         $this->preco = $string;
     }
     
-    public function setImg($array){
-        $this->imagem = $array;
+    public function setImg($string){
+        $this->imagem = $string;
     }
     //Metodos Get
     public function getId(){
